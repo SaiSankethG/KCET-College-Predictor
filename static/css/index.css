@@ -3,20 +3,22 @@ body{
     padding:0;
     font-family: 'Lato' , sans-serif;
     /* background-image: linear-gradient(180deg , #171321 ,   #0d314b 75.28%, #e66465 ); */
+    font-size: medium;
 }
-
 fieldset{
     margin:2rem 0;
     padding: 1em 2em;
-    border:solid 1px #ccc;
-    border-radius: 6%;
+    border:solid 2px #ccc;
+    /* border-radius: 6%; */
     min-width: 200px;
+    font-size: medium;
 }   
 legend{
     /* color: #fff; */
     font-size: 1.25em;
     padding: 0.25em;
     color: #999;
+    font-size: medium;
 }
 /* label{
     display: block;
@@ -25,11 +27,13 @@ legend{
 
 input{
     padding:.5em;
-    border: solid 1px #999;
+    border: solid 1.5px #999;
+    font-size: medium;
     /* color: #fff; */
 }
 select option{
     color: #171321;
+    font-size: medium;
 }
 input[type="sumbit"]
 {
@@ -38,13 +42,40 @@ input[type="sumbit"]
     color:#fff;
     font-family: 'Lato', sans-serif;
     font-size: .8em;
+    font-size: medium;
  }
- @media screen and (min-width:430px){
-    legend{
-        font-size:1.75em;
-    }
-    fieldset{
-        width:40%;
-        min-width: 320px;
-    }
- }
+
+.content{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size:0.9em ;
+    min-width: 400px;
+    border-radius:5px 5px 0 0;
+    overflow: hidden;
+}
+.content thead tr{
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+}
+
+.content th , 
+.content td {
+    padding: 12px 15px;
+}
+
+.content tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.content tbody tr:nth-of-type(even){
+    background-color:#f3f3f3;
+}
+
+.content tbody tr:last-of-type{
+    border-bottom:2px solid #009879
+}
+
+/* .output{
+    box-shadow: 0 0 10px rgba(0,0, 0, 2);
+    border-radius: 6%;
+} */

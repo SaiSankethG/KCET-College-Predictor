@@ -216,3 +216,9 @@ function MultiselectDropdown(options){
 window.addEventListener('load',()=>{
   MultiselectDropdown(window.MultiselectDropdownOptions);
 });
+// let btnclear=Document.querySelector('clearbtn')
+// let table=Document.querySelectorAll('.content')
+
+// btnclear.addEventListener('click' , ()=>{
+//     table.forEach(input => input.value='')
+// })
