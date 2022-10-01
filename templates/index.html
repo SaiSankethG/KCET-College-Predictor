@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kcet counselling</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <style type="text/css">select branch {
+        width:20em;
+    }
+    select Place {
+        width:20em;}</style>
+</head>
+<body>
+    <!-- student details -->
+    <form id="form-user" action="/" method="POST">
+        <fieldset name="Student-Information">  
+            <label>Student-Details</label>
+            
+            <div class="input">
+            <div>
+            <label for="firstname">Name:</label>
+            <input type="text" name="firstname" id="firstname" required autofocus placeholder="Enter your name" autocomplete="on" class="name">
+            </div>
+            <br>
+            <div>
+            <label for="Rank">Rank:</label>
+            <input type="number" name="Rank" id="Rank" required placeholder="Enter your K-CET rank" autocomplete="on" class="rank">
+            </div>
+            <br>
+            <div>
+                <label for="Category" >Category:</label>
+            <select name="Category" id="Category" class="category" required>
+                <option value="1G">1G</option>
+                <option value="1K">1K</option>
+                <option value="1R">1R</option>
+                <option value="2AG">2AG</option>
+                <option value="2AK">2AK</option>
+                <option value="2AR">2AR</option>
+                <option value="2BG">2BG</option>
+                <option value="2BK">2BK</option>
+                <option value="2BR">2BR</option>
+                <option value="3AG">3AG</option>
+                <option value="3AK">3AK</option>
+                <option value="3AR">3AR</option>
+                <option value="3BG">3BG</option>
+                <option value="3BK">3BK</option>
+                <option value="3BR">3BR</option>
+                <option value="GM">GM</option>
+                <option value="GMK">GMK</option>
+                <option value="GMR">GMR</option>
+                <option value="SCG">SCG</option>
+                <option value="SCK">SCK</option>
+                <option value="SCR">SCR</option>
+                <option value="STG">STG</option>
+                <option value="STK">STK</option>
+                <option value="STR">STR</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Branch" >Branch:</label>
+            <select name="Branch" id="Branch" multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="33" class="branch">
+                <option value="ALL BRANCHES">ALL BRANCHES</option>
+                <option value="AI">AI(Artificial INtelligence)</option>
+                <option value="BT">BT(Bio Technology)</option>
+                <option value="CE">CE(Civil)</option>
+                <option value="CS">CS(Computer Science)</option>
+                <option value="EC">EC(Electronics)</option>
+                <option value="EE">EE(Electrical)</option>
+                <option value="EI">EI(Elec, Inst. Engg)</option>
+                <option value="ET">ET(Elec. Telecomm. Engg)</option>
+                <option value="IE">IE(Information Science)</option>
+                <option value="IM">IM(Ind. Engg. Management)</option>
+                <option value="ME">ME(Mechanical Engg)</option>
+                <option value="SE">SE(Aerospace Engg)</option>
+                <option value="MD">MD(Medical. Elect)</option>
+                <option value="AD">AD(Artificial Intelligence , Data Science)</option>
+                <option value="CA CS">CA CS(AI , Machine Learning)</option>
+                <option value="CY CS">CY CS(Cyber Security)</option>
+                <option value="EL">EL(Electronics , Instr . Tech)</option>
+                <option value="EN">EN(Environmental)</option>
+                <option value="IP">IP(Ind. Prod))</option>
+                <option value="PT">PT(Polymer Tech)</option>
+                <option value="CB">CB(Comp. Sc. and Bus sys.)</option>
+                <option value="CT">CT(Const. Tech Mgmt)</option>
+                <option value="AE">AE(Aeronaut Engg)</option>
+                <option value="AU">AU(Automobile)</option>
+                <option value="CD">CD(Computer Sc. and Design)</option>
+                <option value="RI">RI(Robotics and AI)</option>
+                <option value="CF CS">CF CS(Artificial Intel)</option>
+                <option value="II">II(EC-Industrial Integrated</option>
+                <option value="RO">RO(Auto and RObot)</option>
+                <option value="TC">TC(Telecomm.)</option>
+                <option value="DS">DS(Comp. Sc. Engg. Data Sc)</option>
+                <option value="CO">CO(Computer Engineering)</option>
+                <option value="RA">RA(Robotics and Automation)</option>
+            </select>
+        </div>
+        <br>
+      <div>
+        <label for="Place" >Place:</label>
+        <select name="Place" id="Place" multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="30" class="place">
+            <option value="ALL DISTRICTs">ALL DISTRICTs</option>
+            <option value="Bagalkot">Bagalkot</option>
+            <option value="BANGALORE">Bangalore</option>
+            <option value="BELAGAVI">Belagavi</option>
+            <option value="Bellary">Bellary</option>
+            <option value="Bidar">Bidar</option>
+            <option value="BIJAPUR">Bijapur</option>
+            <option value="Chamarajanagara">Chamarajanagara</option>
+            <option value="Chickmagalur">Chickmagalur</option>
+            <option value="Chikkaballapur">Chikkaballapur</option>
+            <option value="Chitradurga">Chitradurga</option>
+            <option value="Dakshina Kannada">Dakshina Kannada</option>
+            <option value="Davanagere">Davangere</option>
+            <option value="Dharwad">Dharwad</option>
+            <option value="Gadag">Gadag</option>
+            <option value="Gulbarga">Gulbarga</option>
+            <option value="Hassan">Hassan</option>
+            <option value="Haveri">Haveri</option>
+            <option value="hubballi">Hubballi</option>
+            <option value="KARWAR">Karwar</option>
+            <option value="Kodagu">Kodagu</option>
+            <option value="KOLAR">Kolar</option>
+            <option value="Koppal">Koppal</option>            
+            <option value="Mandya">Mandya</option>            
+            <option value="Mangalore">Manglore</option>            
+            <option value="Moodabidri">Moodabidri</option>            
+            <option value="Mysore">Mysore</option>            
+            <option value="Raichur">Raichur</option>        
+            <option value="ramanagara">Ramanagara</option>        
+            <option value="shivamogga">Shivamogga</option>        
+            <option value="Tumkur">Tumkur</option>        
+            <option value="Udupi">Udupi</option>        
+            <option value="Uttar kannada">Uttar Kannad</option>        
+            <option value="vijayapur">Vijayapurr</option>        
+            <option value="Yadigir">Yadigir</option>        
+        </select>
+      </div>
+    </div>
+    <br>
+    <div>
+    <button type="submit" class="submit-button">submit</button>
+      <button type="reset" class="submit-button">reset</button>
+    </div>
+</fieldset>
+      <br>
+      <div class="output">
+        <fieldset>
+            <label><b>Results</b></label>
+            <div class="results">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">College</th>
+                            <th scope="col">Place</th>
+                            <th scope="col">Branch</th>
+                            <th scope="col">Cutoff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for opt in data %}
+                        <tr>
+                            <td>{{opt[0]}}</td>
+                            <td>{{opt[1]}}</td>
+                            <td>{{opt[2]}}</td>
+                            <td>{{opt[3]}}</td>
+                            <td>{{opt[4]}}</td>
+                        </tr>
+                        {% endfor %}
+                        
+
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+      </div>
+
+    </form>
+    <script src="../static/js/mutliselect.js" type="text/javascript"></script>
+    <!-- <script src="js/index.js" type="text/javascript"></script> -->
+</body>
+</html>
