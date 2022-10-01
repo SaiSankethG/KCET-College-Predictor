@@ -79,12 +79,13 @@ input[type="sumbit"]
     border-radius: 6%;
 } */
 div p{
-    width:95%;
+    width:99%;
     height:auto;
     color: rgb(0, 0, 0);
     border-radius:5px;
     border: 2px solid #999;
 }
+
 div b .red{
     color: rgba(255, 0, 0, 0.691);
 }

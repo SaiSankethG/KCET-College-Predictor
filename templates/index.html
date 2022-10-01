@@ -33,7 +33,8 @@
             <br>
             <div>
                 <label for="Category" >Category:</label>
-            <select name="Category" id="Category" class="category">
+            <select name="Category" id="Category" required class="category">
+                <option value="">---SELECT---</option>
                 <option value="1G">1G</option>
                 <option value="1K">1K</option>
                 <option value="1R">1R</option>
@@ -63,7 +64,8 @@
         <br>
         <div>
             <label for="Branch" >Branch:</label>
-            <select name="Branch" id="Branch" multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="33" class="branch">
+            <select name="Branch" id="Branch" required multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="33" class="branch">
+                <!-- <option value="">---SELECT---</option> -->
                 <option value="ALL BRANCHES">ALL BRANCHES</option>
                 <option value="AI">AI(Artificial INtelligence)</option>
                 <option value="BT">BT(Bio Technology)</option>
@@ -103,7 +105,8 @@
         <br>
       <div>
         <label for="Place" >Place:</label>
-        <select name="Place" id="Place" multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="30" class="place">
+        <select name="Place" id="Place" required multiple multiselec-search="true" multitselect-select-all="true" multiselect-max-items="30" class="place">
+            <!-- <option value="">---SELECT---</option> -->
             <option value="ALL DISTRICTs">ALL DISTRICTs</option>
             <option value="Bagalkot">Bagalkot</option>
             <option value="BANGALORE">Bangalore</option>
