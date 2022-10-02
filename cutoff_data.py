@@ -2,7 +2,7 @@ import sqlite3
 
 
 def read_db(rank: int, cat: str, place: str, branch: str):
-    rank = rank * 0.7
+    rank = rank * 0.9
     connection = sqlite3.connect('data.sqlite')
     with connection:
         cursor = connection.cursor()
