@@ -89,7 +89,9 @@ div p{
 div b .red{
     color: rgba(255, 0, 0, 0.691);
 }
-
+div b .note{
+    font-size: large;
+}
 @media(max-width: 430px){
 .div p{
 width: 100%;
@@ -109,3 +111,106 @@ width: 100%;
     }
 
 } */
+
+
+/* .child2{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto;
+    height: 25%;
+} */
+/* html , body {
+    height: 100%;
+    margin: 0;
+}
+.output{
+    margin-bottom: -10%;
+}
+footer, .output::after{
+    height: 10%;
+} */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 18%;
+    background-color: #00987abf;
+    /* display: grid;
+    justify-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    /* color: white; */
+    height: 8%;
+    border-radius: 10px;
+}
+body {
+    margin: 0;
+    padding: 5% 10%;
+    /* background: #dcd7ce; */
+    color: #333;
+    font-family: sans-serif;
+    font-size: 100%;
+  }
+  p {
+    text-align: center;
+    padding-top: 1em;
+  }
+  ul.social-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+  ul.social-set li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            justify-content: center; */
+  }
+  /* Font Awesome icons */
+  /* a.sociali {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 10px;
+    background: #00987abf;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding: 10px;
+    margin-left: 20px;
+  } */
+  /* a.sociali:hover, a.sociali:focus {
+    background: #6d8785;
+  } */
+
+  a.sociali{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-left: 10px;
+  padding:5px;
+  }
+  .input{
+    display: flex;
+    flex-direction: row;
+  }
