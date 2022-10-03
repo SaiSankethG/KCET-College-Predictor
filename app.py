@@ -1,6 +1,6 @@
 
 
-from flask import Flask,render_template,request, send_file 
+from flask import Flask,render_template,request, send_file, send_file 
 
 from cutoff_data import read_db
 from get_functions import get_rank,get_category,get_branches,get_places
