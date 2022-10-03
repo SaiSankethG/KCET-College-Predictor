@@ -33,9 +33,9 @@ def hello_world():
 
     return render_template('index.html',data = data)
 
-# @app.route('/donate')
-# def qr_code():
-#     return send_file('qr_code.jpg',mimetype='Image')
+@app.route('/donate')
+def qr_code():
+    return send_file('qr_code.jpg',mimetype='Image')
 
 
 
