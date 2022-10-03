@@ -1,6 +1,6 @@
 
 
-from flask import Flask,render_template,request 
+from flask import Flask,render_template,request, send_file 
 
 from cutoff_data import read_db
 from get_functions import get_rank,get_category,get_branches,get_places
@@ -32,7 +32,12 @@ def hello_world():
 
 
     return render_template('index.html',data = data)
-    #return "<p>Hello, World!</p>"
+
+@app.route('/qr_code')
+def qr_code():
+    return send_file('qr_code.jpg',mimetype='Image')
+
+
 
 
 if __name__ == "__main__":

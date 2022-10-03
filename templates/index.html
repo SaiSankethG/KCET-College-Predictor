@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kcet counselling</title>
     <link rel="stylesheet" href="../static/css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
     <style type="text/css">select branch {
         width:20em;
     }
@@ -20,6 +21,7 @@
             <div class="ient details -->
     <form id="form-user" action="/" method="POST">
         <fieldset class="input">
+            <div class="child1">
             <h2>Enter Your Details</h2>
             <div>
             <label for="firstname">Name:</label>
@@ -144,11 +146,16 @@
             <option value="Yadigir">Yadigir</option>        
         </select>
       </div>
-    </div>
     <br>
     <div>
     <button type="submit" class="submit-button">submit</button>
     <button type="reset" class="submit-button">reset</button>
+    </div>
+</div>
+    <div class="child2">
+        <figure>
+            <img src="/qr_code" width="45%"height='58%' loading = 'lazy' alt="qrcode">
+        </figure>
     </div>
 </fieldset>
 <div class="note">
@@ -196,5 +203,15 @@
     <script src="../static/js/mutliselect.js" type="text/javascript"></script>
     <!-- <script src="js/index.js" type="text/javascript"></script> -->
     <script src="../static/js/index.js" type="text/javascript"></script>
+    <footer style="display:flex">
+        <section class="social">
+            <ul class="social-set">
+                <li><a href="https://t.me/kcet_cuttoff" class="sociali" target="_blank">
+                <span class="fa-brands fa-telegram"></span><span class="sr-only">telegram</span></span></li>
+                <li><a href="https://chat.whatsapp.com/IMqqSXbzOK76EvAw8EnKMy" style="color:white" class="sociali" target="_blank"><i class="fa-brands fa-whatsapp"></i><span class="sr-only">Whatsapp group</span></li>
+                <li><a href="mailto:kcetcuttof@gmail.com" style="color:white" class="sociali" target="_blank"><i class="fa-regular fa-envelope"></i><span class="sr-only">Mail to</span></li>
+        </ul>
+    </section>
+    </footer>
 </body>
 </html>
