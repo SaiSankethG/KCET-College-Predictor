@@ -1,26 +1,26 @@
-from dataset import categories, branches, districts
+from medical.med_dataset import categories, seat_type, districts
 
 
 
 
-def get_rank(r):
+def med_get_rank(r):
 
     return int(r)
 
 
-def get_category(c):
+def med_get_category(c):
 
     return categories[c]
 
 
-def get_branches(b):
+def med_get_seat_type(b):
 
     n = []
 
     for br in b:
         br = br.strip()
 
-        if br in branches.keys():
+        if br in seat_type:
             n.append(br)
         
 
@@ -35,7 +35,7 @@ def get_branches(b):
 
        
 
-def get_places(p):
+def med_get_places(p):
 
     n = []
 

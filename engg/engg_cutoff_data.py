@@ -1,9 +1,9 @@
 import sqlite3
 
 
-def read_db(rank: int, cat: str, place: str, branch: str):
+def engg_read_db(rank: int, cat: str, place: str, branch: str):
     rank = rank * 0.9
-    connection = sqlite3.connect('data.sqlite')
+    connection = sqlite3.connect('engg/engg_2021_r3.sqlite')
     with connection:
         cursor = connection.cursor()
 
