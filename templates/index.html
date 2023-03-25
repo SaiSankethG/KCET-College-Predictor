@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kcet counselling</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    
+    <link rel="stylesheet" href="../static/css/index2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -14,34 +18,49 @@
             <label>Student-Details</label>
             
             <div class="ient details -->
-    <form id="form-user" action="/" method="POST">
-        <fieldset class="input">
+            <center>
+                    <h1>
+                        K-CET COLLEGE PREDICTOR
+                    </h1>
+    <form id="form-user" name="form1" action="/" method="POST">
+            <fieldset>
+            <h2>Login</h2>
             <div class="child1">
-            <h2>Enter Your Details</h2>
-            <div>
-            <label for="firstname">Name:</label>
-            <input type="text" name="firstname" id="firstname" required autofocus placeholder="Enter your name" autocomplete="on" class="name">
+            <div class="firstName">
+            <input type="text" name="firstname" id="firstname" required autofocus placeholder="Enter your email-id" autocomplete="on" class="name">
             </div>
             <br>
-            
-   
-            <div>
-                <label for="Stream" >Choose Your Stream:</label>
+
+            <div class="choose_stream">
+                
             <select name="Stream" id="Stream" required class="stream">
-                <option value="">---SELECT---</option>
+                <option value="">---Choose your stream---</option>
                 <option value="Engineering">Engineering</option>
                 <option value="Medical">MBBS,BAMS,BHMS,BUMS</option>
             </select>
             </div>
-        
-    <br>
-    <div>
-    <button type="submit" class="submit-button">submit</button>
-    <button type="reset" class="submit-button">reset</button>
-    </div>
-
-
-    </form>
+            <br>
+            <div class=firstName>
+                <input type="password" placeholder="Enter password" required >
+            </div>
+            <div class="forgot_pwd">
+                <p>
+                <a href="#">forgot password?
+                </p>
+            </div>
+            <br>
+            
+            <div class="inline_button">
+            <button type="submit" class="submit-button" onclick="return ValidateEmail(form1.firstname)">Login</button>
+            <button type="reset" class="submit-button">reset</button>
+            </div>
+            <p class="sign_up">
+                Don't have an account? <a href="/signup">sign-up
+            </p>
+            </div>
+        </fieldset>
+            </form>
+        </center>
     <script src="../static/js/mutliselect.js" type="text/javascript"></script>
     <!-- <script src="js/index.js" type="text/javascript"></script> -->
     <script src="../static/js/index.js" type="text/javascript"></script>

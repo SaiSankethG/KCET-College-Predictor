@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEET Karnataka counselling</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/medical.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">select seat_type {
         width:20em;
     }
@@ -19,24 +23,48 @@
             <label>Student-Details</label>
             
             <div class="ient details -->
+                <header>
+                    <div class="logo">
+                        <img alt="kcet-college predictor logo" src="../static/img/logo.png">
+                    </div>
+                    <nav>
+                        <div class="logo">
+                            <img src="../static/img/logo.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#form-user" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="#table">College</a>
+                            </li>
+                            <li><a href="/">Logout</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav_check" class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </header>
+            <br>
+            <br>
     <form id="form-user" action="/medical" method="POST">
         <fieldset class="input">
             <div class="child1">
             <h2>Enter Your Details</h2>
             <div>
-            <label for="firstname">Name:</label>
             <input type="text" name="firstname" id="firstname" required autofocus placeholder="Enter your name" autocomplete="on" class="name">
             </div>
             <br>
             <div>
-            <label for="Rank">Rank:</label>
             <input type="number" name="Rank" id="Rank" required placeholder="Enter your NEET rank" autocomplete="on" class="rank">
             </div>
             <br>
             <div>
-                <label for="Category" >Category:</label>
+                
             <select name="Category" id="Category" required class="category">
-                <option value="">---SELECT---</option>
+                <option value="">---Category---</option>
                 <option value="1G">1G</option>
                 <option value="1K">1K</option>
                 <option value="1R">1R</option>
@@ -66,6 +94,7 @@
         <br>
         <div>
             <label for="seat_type" >seat_type:</label>
+            <br>
             <select name="seat_type" id="seat_type" required multiple multiselect-search="true" multitselect-select-all="true" multiselect-max-items="33" class="seat_type">
                 <!-- <option value="">---SELECT---</option> -->
                 <option value="ALL seat_type">ALL seat_type</option>
@@ -80,6 +109,7 @@
         <br>
       <div>
         <label for="Place" >Place:</label>
+        <br>
         <select name="Place" id="Place" required multiple multiselec-search="true" multitselect-select-all="true" multiselect-max-items="30" class="place">
             <!-- <option value="">---SELECT---</option> -->
             <option value="ALL DISTRICTs">ALL DISTRICTs</option>
@@ -120,18 +150,19 @@
         </select>
       </div>
     <br>
-    <div>
+    <div class="inline_button">
     <button type="submit" class="submit-button">submit</button>
     <button type="reset" class="submit-button">reset</button>
     </div>
 </fieldset>
+</form>
 <div class="note">
-    <p><b>Note:<b>
+   <b>Note:<b>
         <br>
     ● These results are purely based on <b class="red">'NEET Karnataka counselling 2021 2nd ROUND CUTTOFF'</b>
     <br>
     ● Cuttoff's may vary due to <b class="red">change in the number of seats</b> and<b class="red"> newly added College's
-</p></div>
+    </div>
       <br>
       <div>
         <fieldset class="output">
@@ -165,11 +196,39 @@
         <!-- <button class="clearbtn">Clear</button> -->
         </fieldset>
       </div>
+      <!--footer-->
+      <footer>
+        <div id="Footer">
+        <div class="footer_info">
+            <div class=".footer_width about">
+                <h2>About</h2>
+                <p class="about_kcet">
+                    KCET College Predictor is an online tool that helps students predict their chances of getting admission into colleges based on their KCET (Karnataka Common Entrance Test) scores. By providing the required information such as score, category, and preferred courses, the tool generates a list of colleges that the student is likely to get admitted to. The predictions are based on past admission trends and data analysis, giving students a realistic idea of their college options. The tool is easy to use and can be accessed from anywhere, making it a convenient tool for students to plan their future academic pursuits.
+                </p>
 
-    </form>
+                <br> 
+                </div>
+
+            </div>
+            <div class=".footer_width follow">
+                <h2>Follow Us</h2>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://www.facebook.com/sedsuoc/" target="_blank" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.instagram.com/sedsuoc/" target="_blank" class="fa fa-instagram"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCNxdWPmZgjpGytZgoAkZbLA"
+                                class="fa fa-youtube" target="_blank" ></a></li>
+                        <li><a href="https://www.linkedin.com/company/seds-uoc/about/" target="_blank" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
     <script src="../static/js/mutliselect.js" type="text/javascript"></script>
     <!-- <script src="js/index.js" type="text/javascript"></script> -->
-    <script src="../static/js/index.js" type="text/javascript"></script>
+    <script src="../static/js/engg.js" type="text/javascript"></script>
     
 </body>
 </html>

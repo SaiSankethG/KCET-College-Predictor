@@ -66,3 +66,5 @@ branches = {
 
 
 districts = ['ALL DISTRICTs','Bagalkot', 'BANGALORE', 'BELAGAVI', 'Bellary', 'Bidar', 'BIJAPUR', 'Chamarajanagara', 'Chickmagalur', 'Chikkaballapur', 'Chitradurga', 'Dakshina Kannada', 'Davanagere', 'Dharwad', 'Gadag', 'Gulbarga', 'Hassan', 'Haveri', 'hubballi', 'KARWAR', 'Kodagu', 'KOLAR', 'Koppal', 'Mandya', 'Mangalore', 'Moodabidri', 'Mysore', 'Raichur', 'ramanagara', 'shivamogga', 'Tumkur', 'Udupi', 'Uttar kannada', 'vijayapur', 'Yadigir']
+
+# hello world

@@ -36,13 +36,13 @@ def engineering():
     data = []
 
     if request.method == 'POST':
-        name = request.form['firstname']
+        # name = request.form['firstname']
         rank = engg_get_rank(request.form['Rank'])
         category = engg_get_category(request.form['Category'])
         branch = engg_get_branches(request.form.getlist('Branch'))
         place = engg_get_places(request.form.getlist('Place'))
 
-        print(name,rank,category,branch,place, sep='\n')
+        print(rank,category,branch,place, sep='\n')
 
         data = engg_read_db(rank,category,place,branch)
 
@@ -83,11 +83,9 @@ def medical():
     return render_template('medical.html')
     
 
-@app.route('/donate')
-def qr_code():
-    return send_file('qr_code.jpg',mimetype='Image')
-
-
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
 
 
 if __name__ == "__main__":
